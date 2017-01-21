@@ -17,7 +17,7 @@ import urllib
 #1
 def read_text():
     # open the file to check for profanity
-    text = open("C:\Users\\te121286\Downloads\movie_quotes.txt")
+    text = open("---- FILE LOCATION HERE ----")
     # read the contents of the files
     contents_of_file = text.read() 
     # close the file
