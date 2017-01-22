@@ -5,7 +5,7 @@
 # Steps:
 # 1. Create instances of movies
 # 2. Pass the movie data to a function to launch a webpage 
-#
+# 3. Useful pre-defined class variables/attributes
 #
 #
 #
@@ -50,7 +50,18 @@ catch_me_if_you_can = media.Movie("Catch Me If You Can",
 # create a list of movies to pass it to the open_movies_page function
 list_of_movies = [sherlock_holmes,iron_man,the_martian,catch_me_if_you_can]
 # open the webpage
-movie_shoovie.open_movies_page(list_of_movies)
+#movie_shoovie.open_movies_page(list_of_movies)
+
+#3
+# to find out the documentation related to this class
+print(media.Movie.__doc__)
+
+
+# to find out the name of the module in which this class was defined
+print(media.Movie.__module__)
+
+# to find out the name of the class
+print(media.Movie.__name__)
 
 
 
