@@ -1,5 +1,19 @@
+########################################################################################
+# Description: 
+# This program launches a webpage to show details about a few of my fav movies
+# 
+# Steps:
+# 1. Create instances of movies
+# 2. Pass the movie data to a function to launch a webpage 
+#
+#
+#
+#
+########################################################################################
 import media
 import movie_shoovie
+
+#1
 
 # create an instance for movie - sherlock holmes
 sherlock_holmes = media.Movie("Sherlock Holmes",
@@ -31,9 +45,10 @@ catch_me_if_you_can = media.Movie("Catch Me If You Can",
 #print(iron_man.storyline)
 #iron_man.show_trailer()
 
+#2
+
 # create a list of movies to pass it to the open_movies_page function
 list_of_movies = [sherlock_holmes,iron_man,the_martian,catch_me_if_you_can]
-
 # open the webpage
 movie_shoovie.open_movies_page(list_of_movies)
 
