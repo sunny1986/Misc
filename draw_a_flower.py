@@ -44,7 +44,7 @@ def draw_flower():
         #5
         brad.setheading(heading)
         brad.forward(2)
-        brad.speed(10)
+        brad.speed(20)
 
     # Exit the window on click after drawing the flower
     window.exitonclick()
