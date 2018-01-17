@@ -73,7 +73,7 @@ class DBWNode(object):
         rospy.Subscriber('/vehicle/dbw_enabled', Bool, self.dbw_enabled_cb)
         rospy.Subscriber('/current_velocity', TwistStamped, self.current_velocity_cb, queue_size=1)
         rospy.Subscriber('/current_pose', geometry_msgs.msg.PoseStamped, self.current_pose_cb, queue_size=1)
-        rospy.Subscriber('/final_waypoints', styx_msgs.msg.Lane, self.final_waypoints_cb, queue_size=1)
+        rospy.Subscriber('/final_waypoints', styx_msgs.msg.Lane, self.final_wp_cb, queue_size=1)
 
         self.loop()
 
@@ -151,7 +151,7 @@ class DBWNode(object):
             self.brake_pid.reset()
             self.steering_pid.reset()
 
-    def final_waypoints_cb(self, msg):
+    def final_wp_cb(self, msg):
         self.final_waypoints = msg.waypoints
 
 
